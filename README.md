@@ -1,9 +1,6 @@
 <h1 align="center">Merhaba, ben Ayberk Furkan Kaya 👋</h1>
-<h3 align="center">Yönetim Bilişim Sistemleri Öğrencisi · Yazılım Geliştirici</h3>
-
-<p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&pause=1000&color=2E9EF7&center=true&vCenter=true&width=600&lines=Full-Stack+Developer;AI+%26+Otomasyon+Meraklısı;BIST+%26+Finansal+Yazılım" alt="Typing SVG" />
-</p>
+<h3 align="center">Yönetim Bilişim Sistemleri Öğrencisi · Full-Stack Developer</h3>
+<p align="center">AI & Otomasyon meraklısı — BIST & finansal yazılım geliştiriyorum</p>
 
 ---
 
@@ -39,15 +36,6 @@ WhatsApp üzerinden çalışan, yapay zeka destekli kişisel sağlık ve perform
 - **Frontend:** Next.js, React, TypeScript, Tailwind CSS
 - **Veri & AI:** Python, SQL, OpenAI API, veri analizi
 - **Altyapı:** Docker, Nginx Proxy Manager, Cloudflare, Vercel
-
----
-
-### 📊 GitHub İstatistikleri
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=ayberkfurkan1212&show_icons=true&theme=default&hide_title=false" alt="GitHub Stats" height="165"/>
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=ayberkfurkan1212&theme=default" alt="GitHub Streak" height="165"/>
-</p>
 
 ---
 
