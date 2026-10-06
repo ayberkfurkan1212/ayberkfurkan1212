@@ -3,7 +3,7 @@
 <p align="center">Next.js · Supabase · n8n · LLM entegrasyonları ile uçtan uca ürünler geliştiriyorum</p>
 
 <p align="center">
-  <a href="mailto:ayberkfurkankaya@gmail.com"><img src="https://img.shields.io/badge/Email-ayberkfurkankaya%40gmail.com-D14836?style=flat-square&logo=gmail&logoColor=white" /></a>
+    <a href="https://www.linkedin.com/in/ayberkfurkankaya"><img src="https://img.shields.io/badge/LinkedIn-ayberkfurkankaya-0A66C2?style=flat-square&logo=linkedin&logoColor=white" /></a>
   <a href="https://sorutakip.online"><img src="https://img.shields.io/badge/sorutakip.online-canlı-2E9EF7?style=flat-square&logo=vercel&logoColor=white" /></a>
   <img src="https://img.shields.io/badge/İstanbul-Türkiye-E30A17?style=flat-square" />
   <img src="https://img.shields.io/badge/English-B2-555?style=flat-square" />
