@@ -38,7 +38,7 @@ Yaklaşımım: **"AI dili anlar, kod hesaplar."** LLM'leri niyet ve varlık çı
 
 **Frontend & Mobil**
 
-![Next.js](https://img.shields.io/badge/Next.js_14-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![React Native](https://img.shields.io/badge/React_Native_(Expo)-000020?style=for-the-badge&logo=expo&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS_v4-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
@@ -84,15 +84,19 @@ Uygulama indirmeden, WhatsApp'a yazarak (ya da sesli mesaj ve fotoğrafla) kalor
 - **Premium:** veriye dayalı haftalık kalori hedefi ayarı, haftalık yemek planı ve alışveriş listesi, PDF raporlar, aralıklı oruç zamanlayıcısı, kişisel hatırlatmalar
 - **Altyapı:** 30+ tablo ve RLS; GitHub Actions ile otomatik edge function dağıtımı; n8n ile zamanlanmış hatırlatmalar, haftalık yönetici raporu ve hata alarmları; KVKK açık onayı ve tek mesajla hesap silme
 
-#### 📚 [sorutakip.online](https://sorutakip.online)
-`Next.js 14` `Supabase` `Claude API` `n8n` `Vercel` `Python`
+#### 📚 [Soru Takip](https://sorutakip.online) · canlı
+`Next.js 16` `React 19` `Supabase` `Claude API` `Upstash Redis` `Shopier` `n8n` `Python`
 
-YKS'ye hazırlanan öğrenciler için çalışma takip ve analiz platformu — öğrenci ve veli panelleriyle tam kapsamlı bir B2C eğitim ekosistemi.
+YKS'ye hazırlanan öğrenciler için çalışma takip, analiz ve AI koç platformu. Öğrenci kaydeder, AI analiz eder, veli ücretsiz panelinden takip eder. Ürün tasarımından ödeme sistemine, güvenlikten KVKK süreçlerine kadar tek başıma geliştirip işletiyorum.
 
-- **Güvenlik:** Öğrenci/veli yetkilerini izole eden RLS tabanlı mimari, Upstash Redis ile rate limiting, Sentry ile hata izleme
-- **Yapay Zekâ:** Claude API ile günlük çalışma analizi, hata defteri fotoğraf tanıma ve kişisel öğrenme önerileri; n8n + Resend ile haftalık AI koç raporu
-- **Veri:** Railway üzerinde çalışan Python servisiyle güncellenen 20.000+ YÖKATLAS kaydı üzerinden sıralama bazlı üniversite kazanma ihtimali algoritması
-- **Deneyim:** PWA + offline-first kayıt kuyruğu, streak sistemi, haftalık hedefler, paylaşılabilir PNG rapor kartı, veli paneli aktivite ısı haritası
+- **AI Koç:** Claude API ile konu analizi, deneme yorumu, haftalık çalışma planı ve günlük "bugün ne çalışayım?" önerisi; hata defterinde fotoğraftan soru çözümü ve güven skoru. Sayısal hesaplar kodda, LLM yalnızca yorumda
+- **Veri:** Railway'deki Python servisiyle güncellenen 40.000+ YÖKATLAS kaydı (2025 + 2026) üzerinden başarı sırasına göre üniversite eşleştirme
+- **Premium & ödeme:** 7 gün deneme, aylık ve "YKS'ye kadar" paketler; Shopier entegrasyonu (imza doğrulama, tek seferlik kredilendirme), veliye WhatsApp ile ödeme linki; ücretsiz plan limitleri DB trigger'larıyla
+- **Güvenlik:** Tüm tablolarda RLS, oturumdan çözülen kimlikle IDOR koruması, HMAC imzalı httpOnly veli oturumu, Redis ile rate limit ve öğrenci başına AI kotası, özel depolama + imzalı URL, Sentry EU
+- **Deneyim:** PWA + offline-first kayıt kuyruğu, streak sistemi, push bildirimleri, haftalık hedefler, paylaşılabilir PNG rapor kartı, veli paneli ısı haritası
+- **KVKK:** 18 yaş altı için veli beyanı ve otomatik bilgilendirme, açık rıza, tek tıkla hesap ve veri silme
+
+<sub>🔒 Kaynak kodu özel · ürünü <a href="https://sorutakip.online">sorutakip.online</a> adresinde inceleyebilirsiniz</sub>
 
 ---
 
