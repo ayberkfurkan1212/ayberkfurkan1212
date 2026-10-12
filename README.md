@@ -80,7 +80,7 @@ Uygulama indirmeden, WhatsApp'a yazarak (ya da sesli mesaj ve fotoğrafla) kalor
 - **Deterministik AI:** LLM yalnızca niyet/varlık çıkarımında (25+ intent, 61 senaryoluk otomatik regresyon testi); kalori, makro, porsiyon ve hedef hesapları SQL/TypeScript katmanında
 - **Çok modlu girdi:** Whisper ile sesli mesaj; vision modeliyle yemek fotoğrafı, ürün barkodu ve paket üstü besin değerleri tablosu okuma
 - **Besin verisi:** 2.700+ kayıtlık Türkçe besin veritabanı (650 zincir restoran ürünü: McDonald's, Burger King, Popeyes, Starbucks, Tavuk Dünyası); `pg_trgm` + `unaccent` ile yazım hatasına dayanıklı arama, bulunamayan besin için web araştırması
-- **Antrenman motoru:** 6 hazır program, hareket bazlı otomatik ilerleme (lineer ve çift ilerleme, deload), 1RM tahmini ve kişisel rekorlar; kardiyoda Compendium/ACSM MET tabanlı kalori, tempo ve mesafe rekorları, haftalık 150 dk hedefi
+- **Antrenman motoru:** 7 hazır program (6 ağırlık + 8 haftalık Koşuya Başla 0 → 5 km), hareket bazlı otomatik ilerleme (lineer ve çift ilerleme, deload), 1RM tahmini ve kişisel rekorlar; kardiyoda Compendium/ACSM MET tabanlı kalori, tempo ve mesafe rekorları, haftalık 150 dk hedefi
 - **Premium:** veriye dayalı haftalık kalori hedefi ayarı, haftalık yemek planı ve alışveriş listesi, PDF raporlar, aralıklı oruç zamanlayıcısı, kişisel hatırlatmalar
 - **Altyapı:** 30+ tablo ve RLS; GitHub Actions ile otomatik edge function dağıtımı; n8n ile zamanlanmış hatırlatmalar, haftalık yönetici raporu ve hata alarmları; KVKK açık onayı ve tek mesajla hesap silme
 
