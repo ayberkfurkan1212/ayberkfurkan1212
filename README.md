@@ -4,6 +4,7 @@
 
 <p align="center">
     <a href="https://www.linkedin.com/in/ayberkfurkankaya"><img src="https://img.shields.io/badge/LinkedIn-ayberkfurkankaya-0A66C2?style=flat-square&logo=linkedin&logoColor=white" /></a>
+  <a href="https://sportakip.tr"><img src="https://img.shields.io/badge/sportakip.tr-canlı-25D366?style=flat-square&logo=whatsapp&logoColor=white" /></a>
   <a href="https://sorutakip.online"><img src="https://img.shields.io/badge/sorutakip.online-canlı-2E9EF7?style=flat-square&logo=vercel&logoColor=white" /></a>
   <img src="https://img.shields.io/badge/İstanbul-Türkiye-E30A17?style=flat-square" />
   <img src="https://img.shields.io/badge/English-B2-555?style=flat-square" />
@@ -47,6 +48,7 @@ Yaklaşımım: **"AI dili anlar, kod hesaplar."** LLM'leri niyet ve varlık çı
 
 ![Supabase](https://img.shields.io/badge/Supabase-3FCF8E?style=for-the-badge&logo=supabase&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
+![Deno](https://img.shields.io/badge/Deno_Edge_Functions-000000?style=for-the-badge&logo=deno&logoColor=white)
 ![Upstash Redis](https://img.shields.io/badge/Upstash_Redis-00E9A3?style=for-the-badge&logo=upstash&logoColor=black)
 
 **Yapay Zekâ & Otomasyon**
@@ -60,6 +62,7 @@ Yaklaşımım: **"AI dili anlar, kod hesaplar."** LLM'leri niyet ve varlık çı
 **Dağıtım & Araçlar**
 
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)
 ![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
 ![Railway](https://img.shields.io/badge/Railway-0B0D0E?style=for-the-badge&logo=railway&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
@@ -68,6 +71,18 @@ Yaklaşımım: **"AI dili anlar, kod hesaplar."** LLM'leri niyet ve varlık çı
 ---
 
 ### 📌 Öne Çıkan Projeler
+
+#### 💪 [SporTakip](https://sportakip.tr) · canlı
+`WhatsApp Cloud API` `OpenAI` `Supabase Edge Functions` `PostgreSQL` `n8n` `GitHub Actions`
+
+Uygulama indirmeden, WhatsApp'a yazarak (ya da sesli mesaj ve fotoğrafla) kalori, makro, su, kilo, antrenman ve kardiyo takibi yapan yapay zekâ asistanı. Fikirden canlı ürüne kadar (ödeme modeli, KVKK süreçleri ve [tanıtım sitesi](https://sportakip.tr) dahil) uçtan uca geliştirdim.
+
+- **Deterministik AI:** LLM yalnızca niyet/varlık çıkarımında (25+ intent, 61 senaryoluk otomatik regresyon testi); kalori, makro, porsiyon ve hedef hesapları SQL/TypeScript katmanında
+- **Çok modlu girdi:** Whisper ile sesli mesaj; vision modeliyle yemek fotoğrafı, ürün barkodu ve paket üstü besin değerleri tablosu okuma
+- **Besin verisi:** 2.700+ kayıtlık Türkçe besin veritabanı (650 zincir restoran ürünü: McDonald's, Burger King, Popeyes, Starbucks, Tavuk Dünyası); `pg_trgm` + `unaccent` ile yazım hatasına dayanıklı arama, bulunamayan besin için web araştırması
+- **Antrenman motoru:** 6 hazır program, hareket bazlı otomatik ilerleme (lineer ve çift ilerleme, deload), 1RM tahmini ve kişisel rekorlar; kardiyoda Compendium/ACSM MET tabanlı kalori, tempo ve mesafe rekorları, haftalık 150 dk hedefi
+- **Premium:** veriye dayalı haftalık kalori hedefi ayarı, haftalık yemek planı ve alışveriş listesi, PDF raporlar, aralıklı oruç zamanlayıcısı, kişisel hatırlatmalar
+- **Altyapı:** 30+ tablo ve RLS; GitHub Actions ile otomatik edge function dağıtımı; n8n ile zamanlanmış hatırlatmalar, haftalık yönetici raporu ve hata alarmları; KVKK açık onayı ve tek mesajla hesap silme
 
 #### 📚 [sorutakip.online](https://sorutakip.online)
 `Next.js 14` `Supabase` `Claude API` `n8n` `Vercel` `Python`
@@ -78,16 +93,6 @@ YKS'ye hazırlanan öğrenciler için çalışma takip ve analiz platformu — �
 - **Yapay Zekâ:** Claude API ile günlük çalışma analizi, hata defteri fotoğraf tanıma ve kişisel öğrenme önerileri; n8n + Resend ile haftalık AI koç raporu
 - **Veri:** Railway üzerinde çalışan Python servisiyle güncellenen 20.000+ YÖKATLAS kaydı üzerinden sıralama bazlı üniversite kazanma ihtimali algoritması
 - **Deneyim:** PWA + offline-first kayıt kuyruğu, streak sistemi, haftalık hedefler, paylaşılabilir PNG rapor kartı, veli paneli aktivite ısı haritası
-
-#### 💪 [SporTakip AI](https://github.com/ayberkfurkan1212/GymFlow-AI)
-`WhatsApp Cloud API` `OpenAI` `Supabase Edge Functions` `PostgreSQL` `n8n`
-
-Yalnızca WhatsApp üzerinden doğal dille (yazı, sesli mesaj, yemek fotoğrafı) beslenme, antrenman, su, kilo ve takviye takibi yapan çok kullanıcılı AI sağlık asistanı.
-
-- **Deterministik AI:** LLM yalnızca niyet/varlık çıkarımında (25+ intent); tüm kalori/makro hesapları veritabanı tabanlı deterministik katmanda
-- **Çok modlu girdi:** Whisper ile sesli mesaj → metin, vision modeliyle yemek fotoğrafı → öğün kaydı (tahminler açıkça işaretli)
-- **Backend:** TypeScript Edge Functions, RLS + CHECK kısıtları + view'lar, webhook mesaj tekilleştirme, Türkçe trigram fuzzy arama
-- **Ürünleşme:** Mifflin-St Jeor ile TDEE hedefleri, zamanlanmış proaktif bildirimler, Free/Premium plan altyapısı ve davet kodu sistemi
 
 ---
 
