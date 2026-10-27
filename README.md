@@ -48,6 +48,7 @@ Yaklaşımım: **"AI dili anlar, kod hesaplar."** LLM'leri niyet ve varlık çı
 
 ![Supabase](https://img.shields.io/badge/Supabase-3FCF8E?style=for-the-badge&logo=supabase&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
+![pgvector](https://img.shields.io/badge/pgvector-336791?style=for-the-badge&logo=postgresql&logoColor=white)
 ![Deno](https://img.shields.io/badge/Deno_Edge_Functions-000000?style=for-the-badge&logo=deno&logoColor=white)
 ![Upstash Redis](https://img.shields.io/badge/Upstash_Redis-00E9A3?style=for-the-badge&logo=upstash&logoColor=black)
 
@@ -73,16 +74,16 @@ Yaklaşımım: **"AI dili anlar, kod hesaplar."** LLM'leri niyet ve varlık çı
 ### 📌 Öne Çıkan Projeler
 
 #### 💪 [SporTakip](https://sportakip.tr) · canlı
-`WhatsApp Cloud API` `OpenAI` `Supabase Edge Functions` `PostgreSQL` `n8n` `GitHub Actions`
+`WhatsApp Cloud API` `OpenAI` `Supabase Edge Functions` `PostgreSQL` `pgvector` `pg_cron` `GitHub Actions`
 
 Uygulama indirmeden, WhatsApp'a yazarak (ya da sesli mesaj ve fotoğrafla) kalori, makro, su, kilo, antrenman ve kardiyo takibi yapan yapay zekâ asistanı. Fikirden canlı ürüne kadar (ödeme modeli, KVKK süreçleri ve [tanıtım sitesi](https://sportakip.tr) dahil) uçtan uca geliştirdim.
 
-- **Deterministik AI:** LLM yalnızca niyet/varlık çıkarımında (25+ intent, 61 senaryoluk otomatik regresyon testi); kalori, makro, porsiyon ve hedef hesapları SQL/TypeScript katmanında
-- **Çok modlu girdi:** Whisper ile sesli mesaj; vision modeliyle yemek fotoğrafı, ürün barkodu ve paket üstü besin değerleri tablosu okuma
-- **Besin verisi:** 2.700+ kayıtlık Türkçe besin veritabanı (650 zincir restoran ürünü: McDonald's, Burger King, Popeyes, Starbucks, Tavuk Dünyası); `pg_trgm` + `unaccent` ile yazım hatasına dayanıklı arama, bulunamayan besin için web araştırması
-- **Antrenman motoru:** 7 hazır program (6 ağırlık + 8 haftalık Koşuya Başla 0 → 5 km), hareket bazlı otomatik ilerleme (lineer ve çift ilerleme, deload), 1RM tahmini ve kişisel rekorlar; kardiyoda Compendium/ACSM MET tabanlı kalori, tempo ve mesafe rekorları, haftalık 150 dk hedefi
-- **Premium:** veriye dayalı haftalık kalori hedefi ayarı, haftalık yemek planı ve alışveriş listesi, PDF raporlar, aralıklı oruç zamanlayıcısı, kişisel hatırlatmalar
-- **Altyapı:** 30+ tablo ve RLS; GitHub Actions ile otomatik edge function dağıtımı; n8n ile zamanlanmış hatırlatmalar, haftalık yönetici raporu ve hata alarmları; KVKK açık onayı ve tek mesajla hesap silme
+- **Deterministik AI:** LLM yalnız niyet/varlık çıkarımında; kalori, makro, porsiyon ve hedef hesapları SQL/TypeScript katmanında. Anlama önbelleği ve model kademelendirmesiyle (gpt-5.4-mini, Premium fotoğrafta gpt-5.5) yazılı öğün başına ~$0,002 maliyet; her OpenAI çağrısı token ve dolar karşılığıyla kayıtlı
+- **Çok modlu girdi:** sesli mesaj → metin; yemek fotoğrafı ve paket üstü besin tablosu okuma; barkod yapay zekâsız (zxing-wasm, ~50 ms)
+- **Besin verisi:** 2.800+ kayıt (USDA, 1.650+ barkodlu ürün, 650 zincir restoran ürünü); `pg_trgm` + `pgvector` ile yazım hatasına ve anlama dayanıklı arama; internetten araştırılan besinler Open Food Facts ve ikinci bir araştırmayla otomatik doğrulanıyor
+- **Antrenman motoru:** 11 program (ağırlık, 0 → 5 km, 10K, yarı maraton, yüzme), otomatik ilerleme ve deload, 87 hareket için görselli anlatım; MET tabanlı kardiyo kalorisi, adım takibi, Apple Sağlık aktarımı
+- **Premium:** veriye dayalı haftalık kalori hedefi, diyet tipine göre yemek planı, PDF raporlar, aralıklı oruç, ilerleme fotoğrafı karşılaştırması
+- **Altyapı:** 50+ tablo ve RLS; n8n'siz kritik yol (imza doğrulamalı webhook → Edge Functions, zamanlama pg_cron'da); AES-GCM şifreli gece yedeği, 5 dk'lık sağlık kontrolü ve maliyet alarmları; GitHub Actions ile otomatik dağıtım; uçtan uca test koşucusu ve 117 testlik regresyon seti; KVKK açık onayı, sağlık durumu güvenlik soruları ve tek mesajla hesap silme
 
 #### 📚 [Soru Takip](https://sorutakip.online) · canlı
 `Next.js 16` `React 19` `Supabase` `Claude API` `Upstash Redis` `Shopier` `n8n` `Python`
