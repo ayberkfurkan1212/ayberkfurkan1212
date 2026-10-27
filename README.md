@@ -86,15 +86,16 @@ Uygulama indirmeden, WhatsApp'a yazarak (ya da sesli mesaj ve fotoğrafla) kalor
 - **Altyapı:** 50+ tablo ve RLS; n8n'siz kritik yol (imza doğrulamalı webhook → Edge Functions, zamanlama pg_cron'da); AES-GCM şifreli gece yedeği, 5 dk'lık sağlık kontrolü ve maliyet alarmları; GitHub Actions ile otomatik dağıtım; uçtan uca test koşucusu ve 117 testlik regresyon seti; KVKK açık onayı, sağlık durumu güvenlik soruları ve tek mesajla hesap silme
 
 #### 📚 [Soru Takip](https://sorutakip.online) · canlı
-`Next.js 16` `React 19` `Supabase` `Claude API` `Upstash Redis` `Shopier` `n8n` `Python`
+`Next.js 16` `React 19` `Supabase` `Claude API` `Upstash Redis` `Shopier` `n8n` `Python` `GitHub Actions`
 
 YKS'ye hazırlanan öğrenciler için çalışma takip, analiz ve AI koç platformu. Öğrenci kaydeder, AI analiz eder, veli ücretsiz panelinden takip eder. Ürün tasarımından ödeme sistemine, güvenlikten KVKK süreçlerine kadar tek başıma geliştirip işletiyorum.
 
-- **AI Koç:** Claude API ile konu analizi, deneme yorumu, haftalık çalışma planı ve günlük "bugün ne çalışayım?" önerisi; hata defterinde fotoğraftan soru çözümü ve güven skoru. Sayısal hesaplar kodda, LLM yalnızca yorumda
+- **AI Koç:** Claude API ile konu analizi, deneme yorumu, haftalık çalışma planı ve günlük "bugün ne çalışayım?" önerisi; hata defterinde fotoğraftan soru çözümü ve güven skoru; yanlış yapılan konudan bağımsız doğrulanan YKS formatında pratik sorular. Sayısal hesaplar kodda, LLM yalnızca yorumda; her çağrı maliyetiyle kaydediliyor, öğrenci başına aylık bütçe tavanı var
 - **Veri:** Railway'deki Python servisiyle güncellenen 40.000+ YÖKATLAS kaydı (2025 + 2026) üzerinden başarı sırasına göre üniversite eşleştirme
 - **Premium & ödeme:** 7 gün deneme, aylık ve "YKS'ye kadar" paketler; Shopier entegrasyonu (imza doğrulama, tek seferlik kredilendirme), veliye WhatsApp ile ödeme linki; ücretsiz plan limitleri DB trigger'larıyla
-- **Güvenlik:** Tüm tablolarda RLS, oturumdan çözülen kimlikle IDOR koruması, HMAC imzalı httpOnly veli oturumu, Redis ile rate limit ve öğrenci başına AI kotası, özel depolama + imzalı URL, Sentry EU
+- **Güvenlik:** Tüm tablolarda RLS, oturumdan çözülen kimlikle IDOR koruması, HMAC imzalı httpOnly veli oturumu, Redis ile rate limit, öğrenci başına AI kotası ve eşzamanlı istek kilidi, hata anında kapalı kalan kontroller, özel depolama + imzalı URL, Sentry EU
 - **Deneyim:** PWA + offline-first kayıt kuyruğu, streak sistemi, push bildirimleri, haftalık hedefler, paylaşılabilir PNG rapor kartı, veli paneli ısı haritası
+- **Altyapı:** Veritabanı ve sunucu fonksiyonları AB'de (Frankfurt; Tokyo'dan GitHub Actions ile taşındı), her gece şifreli otomatik yedek, her sabah otomatik sağlık kontrolü ve AI ajanının hazırladığı salt okunur durum raporu
 - **KVKK:** 18 yaş altı için veli beyanı ve otomatik bilgilendirme, açık rıza, tek tıkla hesap ve veri silme
 
 <sub>🔒 Kaynak kodu özel · ürünü <a href="https://sorutakip.online">sorutakip.online</a> adresinde inceleyebilirsiniz</sub>
