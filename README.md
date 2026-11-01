@@ -92,9 +92,9 @@ YKS'ye hazırlanan öğrenciler için çalışma takip, analiz ve AI koç platfo
 
 - **AI Koç:** Claude API ile konu analizi, deneme yorumu, haftalık çalışma planı ve günlük "bugün ne çalışayım?" önerisi; hata defterinde fotoğraftan soru çözümü ve güven skoru; yanlış yapılan konudan bağımsız doğrulanan YKS formatında pratik sorular. Sayısal hesaplar kodda, LLM yalnızca yorumda; her çağrı maliyetiyle kaydediliyor, öğrenci başına aylık bütçe tavanı var
 - **Veri:** Railway'deki Python servisiyle güncellenen 40.000+ YÖKATLAS kaydı (2025 + 2026) üzerinden başarı sırasına göre üniversite eşleştirme
-- **Premium & ödeme:** 7 gün deneme, aylık ve "YKS'ye kadar" paketler; Shopier entegrasyonu (imza doğrulama, tek seferlik kredilendirme), veliye WhatsApp ile ödeme linki; ücretsiz plan limitleri DB trigger'larıyla
+- **Premium & ödeme:** 7 gün deneme, aylık, 3 aylık, yıllık ve "YKS'ye kadar" paketler; Shopier entegrasyonu (imza doğrulama, tek seferlik kredilendirme), veliye WhatsApp ile ödeme linki; ücretsiz plan limitleri DB trigger'larıyla
 - **Güvenlik:** Tüm tablolarda RLS, oturumdan çözülen kimlikle IDOR koruması, HMAC imzalı httpOnly veli oturumu, Redis ile rate limit, öğrenci başına AI kotası ve eşzamanlı istek kilidi, hata anında kapalı kalan kontroller, özel depolama + imzalı URL, Sentry EU
-- **Deneyim:** PWA + offline-first kayıt kuyruğu, streak sistemi, push bildirimleri, haftalık hedefler, paylaşılabilir PNG rapor kartı, veli paneli ısı haritası
+- **Deneyim:** Sinematik arayüz ve yapay zekâyla (Google Veo) üretilmiş ana sayfa videoları, PWA + offline-first kayıt kuyruğu, streak sistemi, push bildirimleri, haftalık hedefler, paylaşılabilir PNG rapor kartı, veli paneli ısı haritası
 - **Altyapı:** Veritabanı ve sunucu fonksiyonları AB'de (Frankfurt; Tokyo'dan GitHub Actions ile taşındı), her gece şifreli otomatik yedek, her sabah otomatik sağlık kontrolü ve AI ajanının hazırladığı salt okunur durum raporu
 - **KVKK:** 18 yaş altı için veli beyanı ve otomatik bilgilendirme, açık rıza, tek tıkla hesap ve veri silme
 
