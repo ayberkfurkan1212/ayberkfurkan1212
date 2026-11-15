@@ -87,17 +87,17 @@ Uygulama indirmeden, WhatsApp'a yazarak (ya da sesli mesaj ve fotoğrafla) kalor
 - **Altyapı:** 50+ tablo ve RLS; n8n'siz kritik yol (imza doğrulamalı webhook → Edge Functions, zamanlama pg_cron'da); AES-GCM şifreli gece yedeği, 5 dk'lık sağlık kontrolü ve maliyet alarmları; GitHub Actions ile otomatik dağıtım; uçtan uca test koşucusu ve 117 testlik regresyon seti; Kasım 2026 güvenlik denetimi ve düzeltmeleri (ödeme eşleştirme, atomik sayaçlar, acil durdurma anahtarı); KVKK açık onayı, sağlık durumu güvenlik soruları ve tek mesajla hesap silme
 
 #### 📚 [Soru Takip](https://sorutakip.online) · canlı
-`Next.js 16` `React 19` `Supabase` `Claude API` `Upstash Redis` `Shopier` `n8n` `Python` `GitHub Actions`
+`Next.js 16` `React 19` `Supabase` `Claude API` `Upstash Redis` `Shopier` `Python` `GitHub Actions`
 
-YKS'ye hazırlanan öğrenciler için çalışma takip, analiz ve AI koç platformu. Öğrenci kaydeder, AI analiz eder, veli ücretsiz panelinden takip eder. Ürün tasarımından ödeme sistemine, güvenlikten KVKK süreçlerine kadar tek başıma geliştirip işletiyorum.
+YKS'ye hazırlanan öğrenciler için çalışma takip, analiz ve AI koç platformu. Öğrenci kaydeder, AI analiz eder, veli kendi panelinden takip eder. Ürün tasarımından ödeme sistemine, güvenlikten KVKK süreçlerine kadar tek başıma geliştirip işletiyorum.
 
 - **AI Koç:** Claude API ile konu analizi, deneme yorumu, haftalık çalışma planı ve günlük "bugün ne çalışayım?" önerisi; hata defterinde fotoğraftan soru çözümü, hata nedeni etiketi ve çözümden önce kademeli ipucu; zaman ağırlıklı (Beta-Binomial) konu ustalığı; yanlış yapılan konudan bağımsız doğrulanan YKS formatında pratik sorular. Sayısal hesaplar kodda, LLM yalnızca yorumda; her çağrı maliyetiyle kaydediliyor; öğrenci başına aylık ve site geneli günlük bütçe tavanı, fotoğraf çözüm önbelleği ve haftalık raporlarda Batch API
 - **Veri:** Railway'deki Python servisiyle güncellenen 40.000+ YÖKATLAS kaydı (2025 + 2026) üzerinden başarı sırasına göre üniversite eşleştirme
-- **Premium & ödeme:** 7 gün deneme, aylık, 3 aylık, yıllık ve "YKS'ye kadar" paketler; Shopier entegrasyonu (imza doğrulama, tek seferlik kredilendirme), veliye WhatsApp ile ödeme linki; ücretsiz plan limitleri DB trigger'larıyla
+- **Premium & ödeme:** 7 gün deneme, aylık, 3 aylık, yıllık ve "YKS'ye kadar" paketler; Shopier entegrasyonu (imza doğrulama, tek seferlik kredilendirme), veliye WhatsApp ile ödeme linki; ücretsiz planda AI özellikleri için deneme hakları ve veli panelinde haftalık özet, tam panel Premium'da; plan limitleri DB trigger'ları ve sunucuda uygulanıyor
 - **Güvenlik:** Tüm tablolarda RLS, oturumdan çözülen kimlikle IDOR koruması, HMAC imzalı httpOnly veli oturumu, Redis ile rate limit, öğrenci başına AI kotası ve eşzamanlı istek kilidi, hata anında kapalı kalan kontroller, sıkı CSP, çıkışta cihaz verisi temizliği, en az yetkili veritabanı rolleri, özel depolama + imzalı URL, Sentry EU
-- **Deneyim:** Sinematik arayüz ve yapay zekâyla (Google Veo) üretilmiş ana sayfa videoları, PWA + offline-first kayıt kuyruğu, streak sistemi ve seri dondurma, günde tek sabah bildirimi, push bildirimleri, haftalık hedefler, paylaşılabilir PNG rapor kartı, veli paneli ısı haritası
+- **Deneyim:** Sinematik arayüz ve yapay zekâyla (Google Veo) üretilmiş ana sayfa videoları, PWA + offline-first kayıt kuyruğu, kaydedilmemiş dersler için cihazda taslak, streak sistemi ve seri dondurma, günde tek sabah bildirimi, push bildirimleri, haftalık hedefler, paylaşılabilir PNG rapor kartı, veli paneli ısı haritası
 - **Altyapı:** Veritabanı ve sunucu fonksiyonları AB'de (Frankfurt; Tokyo'dan GitHub Actions ile taşındı), her gece şifreli otomatik yedek, her sabah otomatik sağlık kontrolü ve AI ajanının hazırladığı salt okunur durum raporu
-- **KVKK:** 18 yaş altı için veli beyanı ve otomatik bilgilendirme, açık rıza, tek tıkla hesap ve veri silme
+- **KVKK:** 18 yaş altı için veli beyanı, bilgilendirme ve imzalı onay bağlantısı (15 yaş altında veli onayı olmadan AI kapalı), açık rıza, tek tıkla hesap ve veri silme
 
 <sub>🔒 Kaynak kodu özel · ürünü <a href="https://sorutakip.online">sorutakip.online</a> adresinde inceleyebilirsiniz</sub>
 
